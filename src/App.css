@@ -1,0 +1,81 @@
+.App {
+  text-align: center;
+  display: flex;
+  overflow: auto;
+  align-items: center;
+  height: 98vh;
+  justify-content: center;
+  font-size: 1.5em;
+  background-image: url("../public/bg.png");
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  font-style: bold, italic;
+}
+
+.sud-container {
+  background-color: black;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 30px;
+  border-radius: 50% !important;
+}
+
+table {
+  border-collapse: collapse;
+  border: 3px solid black;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  width: 360px;
+  height: 360px;
+}
+
+td {
+  border: 1px solid black;
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+td:hover {
+  background-color: lightblue;
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+}
+
+td.selected {
+  background-color: rgb(80, 202, 247);
+  border-radius: 50%;
+}
+
+td:nth-child(3),
+td:nth-child(6) {
+  border-right: 3px solid black;
+}
+
+tr:nth-child(3),
+tr:nth-child(6) {
+  border-bottom: 3px solid black;
+}
+
+.num-board {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.2em;
+}
+
+button {
+  font-size: 1.5rem;
+}
